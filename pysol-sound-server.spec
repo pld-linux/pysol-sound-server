@@ -9,7 +9,7 @@ Source0:	http://pysol2.sourceforge.net/download/%{name}-%{version}.tar.bz2
 # Source0-md5:	fdbfd5c5455b8b51ad469f881870d9f5
 URL:		http://www.oberhumer.com/pysol/
 BuildRequires:	SDL-devel
-BuildRequires:	python-devel >= 2.3
+BuildRequires:	python-devel >= 1:2.3
 BuildRequires:	rpm-pythonprov
 BuildRequires:	smpeg-devel
 Requires:	pysol >= 4.81
