@@ -2,7 +2,7 @@ Summary:	Sound server for pysol
 Summary(pl):	Serwer d¼wiêku dla pysola
 Name:		pysol-sound-server
 Version:	3.00
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://pysol2.sourceforge.net/download/%{name}-%{version}.tar.bz2
@@ -32,9 +32,9 @@ cd src
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{py_libdir}
+install -d $RPM_BUILD_ROOT%{py_sitedir}/pysol
 
-install src/build/lib*/pysolsoundserver.so $RPM_BUILD_ROOT%{py_libdir}
+install src/build/lib*/pysolsoundserver.so $RPM_BUILD_ROOT%{py_sitedir}/pysol
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -42,4 +42,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README NEWS
-%attr(755,root,root) %{py_libdir}/*
+%attr(755,root,root) %{py_sitedir}/pysol/*
