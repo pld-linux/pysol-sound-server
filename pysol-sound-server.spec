@@ -6,8 +6,6 @@ Version:	2.62
 Release:	2
 License:	GPL
 Group:		X11/Applications/Games
-Group(de):	X11/Applikationen/Spiele
-Group(pl):	X11/Aplikacje/Gry
 Source0:	http://www.oberhumer.com/opensource/pysol/download/%{name}-%{version}.tar.bz2
 URL:		http://www.oberhumer.com/pysol
 BuildRequires:	SDL-devel
