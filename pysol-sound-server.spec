@@ -7,6 +7,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://pysol2.sourceforge.net/download/%{name}-%{version}.tar.bz2
+# Source0-md5:	fdbfd5c5455b8b51ad469f881870d9f5
 URL:		http://www.oberhumer.com/pysol/
 BuildRequires:	SDL-devel
 BuildRequires:	python-devel >= 2.2
