@@ -37,12 +37,10 @@ install -d $RPM_BUILD_ROOT%{py_libdir}
 
 install src/build/lib*/pysolsoundserver.so $RPM_BUILD_ROOT%{py_libdir}
 
-gzip -9nf README NEWS
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README NEWS
 %attr(755,root,root) %{py_libdir}/*
