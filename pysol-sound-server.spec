@@ -11,7 +11,6 @@ Source0:	http://www.pysol.org/download/pysol/%{name}-%{version}.tar.bz2
 URL:		http://www.pysol.org/
 BuildRequires:	SDL-devel
 BuildRequires:	python-devel >= 1:2.3
-BuildRequires:	rpm-pythonprov
 BuildRequires:	smpeg-devel
 Requires:	pysol >= 4.81
 %pyrequires_eq	python-libs
