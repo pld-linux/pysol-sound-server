@@ -1,16 +1,16 @@
 %include	/usr/lib/rpm/macros.python
 Summary:	Sound server for pysol
-Summary(pl):	Serwer d德i瘯u dla pysol-a
+Summary(pl):	Serwer d德i瘯u dla pysola
 Name:		pysol-sound-server
 Version:	3.00
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://pysol2.sourceforge.net/download/%{name}-%{version}.tar.bz2
 # Source0-md5:	fdbfd5c5455b8b51ad469f881870d9f5
 URL:		http://www.oberhumer.com/pysol/
 BuildRequires:	SDL-devel
-BuildRequires:	python-devel >= 2.2
+BuildRequires:	python-devel >= 2.3
 BuildRequires:	rpm-pythonprov
 BuildRequires:	smpeg-devel
 Requires:	pysol >= 4.81
@@ -21,7 +21,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Sound server for pysol.
 
 %description -l pl
-Serwer d德i瘯u dla pysol-a.
+Serwer d德i瘯u dla pysola.
 
 %prep
 %setup -q
