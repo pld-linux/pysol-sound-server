@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.python
 Summary:	Sound server for pysol
 Summary(pl):	Serwer d¼wiêku dla pysola
 Name:		pysol-sound-server
