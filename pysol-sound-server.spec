@@ -1,4 +1,4 @@
-%include /usr/lib/rpm/macros.python
+%include	/usr/lib/rpm/macros.python
 Summary:	Sound server for pysol
 Summary(pl):	Serwer d¼wiêku dla pysol-a
 Name:		pysol-sound-server
@@ -10,12 +10,12 @@ Group(de):	X11/Applikationen/Spiele
 Group(pl):	X11/Aplikacje/Gry
 Source0:	http://www.oberhumer.com/opensource/pysol/download/%{name}-%{version}.tar.bz2
 URL:		http://www.oberhumer.com/pysol
-Requires:	pysol
-%requires_eq python
-BuildRequires:	python-devel
 BuildRequires:	SDL-devel
-BuildRequires:	smpeg-devel
+BuildRequires:	python-devel >= 2.2
 BuildRequires:	rpm-pythonprov
+BuildRequires:	smpeg-devel
+Requires:	pysol
+%requires_eq	python
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -35,8 +35,8 @@ cd ..
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{py_libdir}
+
 install src/build/lib*/pysolsoundserver.so $RPM_BUILD_ROOT%{py_libdir}
 
 gzip -9nf README NEWS
@@ -46,5 +46,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{py_libdir}/*
 %doc *.gz
+%attr(755,root,root) %{py_libdir}/*
