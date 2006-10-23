@@ -2,7 +2,7 @@ Summary:	Sound server for pysol
 Summary(pl):	Serwer d¼wiêku dla pysola
 Name:		pysol-sound-server
 Version:	3.01
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Games
 #Source0Download: http://www.pysol.org/
@@ -11,6 +11,7 @@ Source0:	http://www.pysol.org/download/pysol/%{name}-%{version}.tar.bz2
 URL:		http://www.pysol.org/
 BuildRequires:	SDL-devel
 BuildRequires:	python-devel >= 1:2.3
+BuildRequires:	rpm-pythonprov
 BuildRequires:	smpeg-devel
 Requires:	pysol >= 4.81
 %pyrequires_eq	python-libs
