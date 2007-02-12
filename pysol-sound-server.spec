@@ -1,5 +1,5 @@
 Summary:	Sound server for pysol
-Summary(pl):	Serwer d¼wiêku dla pysola
+Summary(pl.UTF-8):   Serwer dÅºwiÄ™ku dla pysola
 Name:		pysol-sound-server
 Version:	3.01
 Release:	2
@@ -20,8 +20,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Sound server for pysol.
 
-%description -l pl
-Serwer d¼wiêku dla pysola.
+%description -l pl.UTF-8
+Serwer dÅºwiÄ™ku dla pysola.
 
 %prep
 %setup -q
