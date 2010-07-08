@@ -2,7 +2,7 @@ Summary:	Sound server for pysol
 Summary(pl.UTF-8):	Serwer dźwięku dla pysola
 Name:		pysol-sound-server
 Version:	3.01
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Applications/Games
 #Source0Download: http://www.pysol.org/
