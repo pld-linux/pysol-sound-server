@@ -1,9 +1,9 @@
-Summary:	Sound server for pysol
-Summary(pl.UTF-8):	Serwer dźwięku dla pysola
+Summary:	Sound server for PySol
+Summary(pl.UTF-8):	Serwer dźwięku dla PySola
 Name:		pysol-sound-server
 Version:	3.01
 Release:	4
-License:	GPL
+License:	GPL v2+
 Group:		X11/Applications/Games
 #Source0Download: http://www.pysol.org/
 Source0:	http://www.pysol.org/download/pysol/%{name}-%{version}.tar.bz2
@@ -18,10 +18,10 @@ Requires:	pysol >= 4.81
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Sound server for pysol.
+Sound server for PySol.
 
 %description -l pl.UTF-8
-Serwer dźwięku dla pysola.
+Serwer dźwięku dla PySola.
 
 %prep
 %setup -q
@@ -43,4 +43,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README NEWS
-%attr(755,root,root) %{py_sitedir}/pysol/*
+%attr(755,root,root) %{py_sitedir}/pysol/pysolsoundserver.so
